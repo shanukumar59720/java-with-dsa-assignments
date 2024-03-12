@@ -1,0 +1,48 @@
+Git and Github
+Assignment Answers
+
+1. What is git?
+Git is a popular version control system which was created by Linus Torvalds for Linux Kernel development in 2005 and maintained by Junio Hamano. It is free and open – source distributed VCS.
+It was designed to manage all your codes in one place. It can handle small to large projects efficiently.
+It stores every small to big changes efficiently and helps your code to be safe at one place and can be accessed from anywhere.
+
+2. What do you understand by the term ‘Version Control System’?
+Version control system (VCS) is a collection of software tools that tracks different versions of your code, helps in collaborating with other developers. It also shows who made the changes and when. It is also known as source control.
+
+3. What is github?
+Github is an online platform that allows users to create, manage, store and share code. It uses git software, which provides distributed version control system and also helps in bug tracking, and access control.
+Using github you can show the code or work that you’ve done to the world as well as privately to some specific set of individuals.
+It is easy to use for beginners and has more than 100 million developers.
+
+4. Mention some popular git hosting services?
+Some popular git hosting services are –
+Github
+Sourceforge
+Codebase
+Gitlab
+DigitalOcean
+
+5. Different types of version control systems?
+There are two types of version control systems –
+Centralized VCS: In centralized vcs, all changes are stored in a central location. These are slower because every command needs to communicate with the server.
+
+Decentralized VCS: In decentralized vcs, each team member makes changes to a local copy of the repository on their computer. These are faster because the user mostly deals with a local copy. As the code is stored in the local system, so even the main server crash won’t impact that much.
+
+6. What benefits come with using git?
+Git is free and open – source version system that can be used for source code management. It tracks changes and also who is accessing and changing the code. As it has push and pull functions, users can pull the whole repository in their local system and can work offline.
+
+7. What is a git repository?
+A git repository is a central location for managing and tracking changes in files and directories. It allows multiple developers to work on a single project simultaneously.
+
+8. How can you initialize a git repository?
+To initialize a git repository one needs to follow the proper steps –
+	1. Open the git terminal or command prompt.
+	2. Navigate to the directory where you want to initialize the 	repository.
+	3. Run the following command- 
+	git init  --> to initialize
+	git add file.java or  git add.  --> added to staging area
+	git comit –m “first comit”
+	git push origin master
+	
+	Using these steps, your repository will be initialized.
+
