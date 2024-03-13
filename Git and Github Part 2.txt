@@ -1,0 +1,50 @@
+Git and Github Part 2
+Assignment Answers
+
+1. How to check if git is available on your system?
+To check if git is available on your system, open a terminal window and type the following command-
+git --version
+
+2. How to initialize a new git repository?
+To initialize a new git repository one needs to follow the proper steps –
+	1. Open the git terminal or command prompt.
+	2. Navigate to the directory where you want to initialize the 	repository.
+	3. Run the following command- 
+	git init  --> to initialize
+	git add file.java or  git add.  --> added to staging area
+	git comit –m “first comit”
+	git push origin master
+	
+
+3. How to tell git about your name and email?
+To tell your name and email to git, you need to follow the steps-
+	1. Open the command window
+	2. Set your username: git config –-global user.name “FIRST_NAME 	LAST_NAME”
+	3. Set your email address: git config –global user.email 	“MY_NAME@GMAIL.COM”
+
+
+4. How to add a file to the staging area?
+There are two ways by which you can add file to the staging area-
+	1. git add .  --> add all files to the staging area
+	2. git add file.java  --> add one file to the staging area.
+
+5. How to remove a file from the staging area?
+To remove a file from the staging area, we need to write a command-
+git rm --cached file.java
+
+6. How to make a commit?
+To commit a file first you need all the files to be added to the staging area from the working area using the command-
+Git add .
+
+Second step is to comit files which are there in staging area using command-
+git comit –m “first comit”
+
+
+7. How to send your changes to a remote repository?
+To send changes to a remote repository, you can use git push command-
+git push –u remote-name branch-name
+
+8. What is the difference between clone and pull?
+Git clone is used to create a local copy of a remote repository.
+Git pull is used to update your local repository with the latest changes from the remote repository.
+
