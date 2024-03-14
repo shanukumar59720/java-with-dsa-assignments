@@ -1,0 +1,58 @@
+Operators and Loops
+Assignment Answer
+
+1. What are the conditional operators in java?
+Conditional operators are used to control the flow of a program. They can be used to make decisions about which code to execute, and to loop over code until a certain condition is met.
+
+2. What are the types of operators based on the number of operands?
+On the basis of number of operands, operators are of three types-
+Unary
+Binary
+Ternary
+
+3. What is the use of switch case in java programming?
+Switch code is used to execute a particular code block when a certain condition is met. Switch statement can be used to simplify code and make it more readable. They are mainly used when there are many possible conditions.
+
+4. What are the priority levels of arithmetic operation in java?
+The priority levels of arithmetic operation in java are-
+Parenthesis
+Increment
+Decrement
+Multiplication
+Division
+Modulus
+Addition
+Subtraction
+
+
+5. What are the conditional statements and use of conditional statements in java?
+Conditional statements are used to control the flow of program. By using conditional statements you can make your code more efficient and easier to read.
+
+6. What is the syntax of if else statement?
+If(a>0){
+	System.out.println(“Execute”);
+	}
+Else{
+	System.out.println(“Recheck”);
+}
+
+7. What are the three types of iterative statements in java?
+Iterative statements are used to control the flow of a program. By using iterative statements, you can repeat a block of code until a certain condition is met.
+The three types of iterative statements are-
+For loop
+While loop
+Do-while loop
+
+8. Write the difference between for loop and do-while loop?
+The major difference between for loop and do-while loop is that for loop is used when the number of iterations is known, whereas execution is done in the while loop until the statement in the program is proved wrong.
+
+9. Write a program to print numbers from 1 to 10.
+Code to print numbers from 1 to 10-
+public class numprint {
+
+    public static void main(String[] args) {
+        for(int i=1; i<=10; i++){
+            System.out.println(i);
+        }
+    }
+}
