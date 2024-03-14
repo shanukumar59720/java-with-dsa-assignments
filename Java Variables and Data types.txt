@@ -1,0 +1,37 @@
+Java Variables and Data types
+Assignment Answers
+
+1. What is statically typed and dynamically typed programming language?
+In the statically typed, memory of the variable is given during the compilation time. It needs to specify data types.
+Example: java, c, c++
+
+In the dynamically typed, memory of the variable is given during the execution time. It does not need to specify data types.
+Example: python, php, javascript
+
+2. What is the variable in java?
+Variable is a name of a memory location which is a reserved region allocated in a memory. It acts like a container that holds the value.
+Variable should be unique.
+
+3. How to assign a value to a variable?
+To assign a value to a variable, the following syntax is used-
+Datatype variable_name = value;
+Ex: int age = 20;
+
+4. What are primitive data types in java?
+Boolean, char, short, int, long, float, double are all primitive data types in java.
+
+5. What are the identifiers in java?
+Identifiers are the names of a variable, class, package, etc. Identifiers are case-sensitive.
+
+6. List the operators in java.
+The list of operators in java are-
+* Arithmetic operator
+* Relational operator 
+* Logical operator
+* Assignment operator
+* Unary operator
+* Bitwise operator
+
+7. Explain about increment and decrement operators and give an example.
+Increment operators (a++) adds 1 to the actual value, whereas decrement operator (a--) does the opposite which is subtracts 1 from the actual value.
+
