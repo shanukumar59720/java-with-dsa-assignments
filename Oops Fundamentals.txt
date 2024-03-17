@@ -1,0 +1,26 @@
+Oops Fundamentals
+Assignment Answers
+
+1. How to create an object in java?
+We can create an object in java using ‘new’ keyword.
+Object obj = new Object();
+
+2. What is the use of a new keyword in java?
+New keyword is used to create an object in java.
+
+3. What are the different types of variables in java?
+There are three types of variables in java. They are –
+* Instance variable
+* Local variable
+* Static variable
+
+4. What is the difference between instance variable and local variable?
+Instance variables are the variables which are defined outside the main method or any method but inside the class.
+
+Local variables are the variables which are defined inside the main method or a method.
+
+5. In which area memory is allocated for instance variable and local variable?
+For instance variable which are mainly object data, the memory allocated is in the heap area. Whereas, local variables which are dealing with runtime stacks, the memory allocation is in stack memory.
+
+6. What is method overloading?
+Method overloading is one the most important concepts of oop, which enables several methods to use the same name but have distinct parameters.
