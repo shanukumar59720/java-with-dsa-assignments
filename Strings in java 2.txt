@@ -1,0 +1,71 @@
+Strings in java 2
+Assignment Answers
+
+1. Write a simple string program to take input from user.
+import java.util.Scanner;
+
+public class stringCode {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter your name : ");
+        String name = sc.nextLine();
+        System.out.println("The name of the user is - " + name);
+    }
+}
+
+2. How do you concatenate two strings in Java? Give an example.
+To concatenate two strings in java, we have two ways –
+* Using + operator
+* Using method --  string.concat() 
+
+Ex:     String s1= "Hello";
+        String s2 = " World";
+        String s3 = s1 + s2;
+        System.out.println(s3);
+
+3. How do you find the length of a string in java? Explain with an example.
+To find the length of a string we can use the length() method.
+Ex: string.length()
+
+4. How do you compare two strings in java? Give an example.
+To compare two strings in java, we can use two ways –
+* == operator
+* Equals() method
+
+5. Write a program to find the length of the string “refrigerator”.
+String str = "refrigerator";
+System.out.println("The length of the word refrigerator is - " + str.length());
+
+6. Write a program to check if the letter ‘e’ is present in the word ‘Umbrella’.
+String str = "Umbrella";
+        int index = str.indexOf('e');
+        if(index != -1) {
+            System.out.println("character 'e' is present in umbrella..." 	);
+        } else {
+            System.out.println("character 'e' is not present in 	umbrella..." );
+        }
+
+7. Write a program to delete all consonants from the string “Hello, have a good day”.
+public class stringCode2 {
+    public static void main(String[] args) {
+        String str = "Hello, have a good day";
+
+        String result = removeConsonants(str);
+        System.out.println("String after removing consonants: " + result);
+    }
+
+    public static String removeConsonants(String str) {
+        StringBuilder result = new StringBuilder();
+        for (char ch : str.toCharArray()) {
+            if (isVowel(ch)) {
+                result.append(ch);
+            }
+        }
+        return result.toString();
+    }
+
+    public static boolean isVowel(char ch) {
+        ch = Character.toLowerCase(ch);
+        return ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u';
+    }
+}
