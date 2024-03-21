@@ -1,0 +1,53 @@
+Encapsulation
+Assignment Answers
+
+1. What is encapsulation in java? Why is it called data hiding?
+Binding of data and corresponding methods into a single unit is called ‘Encapsulation’.
+If any java class follows data hiding then the data will not get exposed to the outside world directly. As it provides the controlled access.
+
+2. What are the important features of encapsulation?
+Some important features of encapsulation are – 
+* Data hiding
+* Data abstraction
+* Getters and setters methods
+
+3. What are getter and setter methods in java? Explain with an example.
+Setter methods are used to set the value of the instance variables of the class. Whereas, getter methods are used to give the value from the instance variables of the class.
+Example –
+class Person{
+    private String name;
+
+    //Getter
+    public String getName() {
+        return name;
+    }
+
+    //Setter
+    public void setName(String newName){
+        this.name = newName;
+
+    }
+}
+
+public class getterSetter {
+    public static void main(String[] args) {
+        Person obj = new Person();
+        obj.setName("Shanu");
+        System.out.println(obj.getName());
+    }
+}
+
+4. What is the use of this keyword? Explain with example.
+this keyword always points to the current object, and this variable would hold the variable address and active object present in the heap memory.
+
+5. What is the advantage of encapsulation?
+There are several advantages of encapsulation. They are – 
+* We can achieve security.
+* Enhancement becomes easy.
+* Maintainability and modularisation becomes easy.
+* It provides flexibility to the user to use the system very easily.
+
+6. How to achieve encapsulation in java? Give an example.
+Encapsulation is achieved by declaring the instance variables of a class as private, which means they can only be accessed within the class.
+To allow outside access to the instance variables, public methods called getters and setters are defined, which are used to retrieve and modify the values of the instance variables.
+By using getters and setters, the class can enforce its own data variables rules and ensure that its internal state remains consistent.
