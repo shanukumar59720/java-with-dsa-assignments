@@ -1,0 +1,32 @@
+Constructor
+Assignment Answers
+
+1. What is a Constructor?
+Whenever we are creating an object some piece of the code will be executed automatically to perform initialization of an object.
+This piece of code is called as constructor, which is used in the initialization of the object.
+
+2. What is constructor chaining?
+Constructor chaining is a mechanism that allows you to call one constructor from another constructor within the same class. This can be useful for initializing objects with different set of parameters, or for reusing code between constructors.
+
+3. Can we call a subclass constructor from a superclass constructor?
+No, we cannot call a subclass constructor from a superclass constructor; because an instance of a subclass is an instance of the superclass, but the vice – versa is not true.
+
+4. What happens if you keep a return type for a constructor?
+If you keep a return type for a constructor, it will become a method of the class.
+
+5. What is No-arg constructor?
+A constructor that does not accept any arguments or parameters is known as no-arg constructor.
+
+6. How is a No-arg constructor different from the default constructor?
+No- arg constructor and default constructor both do not take any arguments. But the difference is this that the default constructor is implicitly provided by the compiler, while a no-arg constructor is explicitly defined by the programmer.
+
+7. When do we need constructor overloading?
+Constructor overloading is useful when a class requires different initialization for different objects.
+For example, a class that represents a geometric shape might have constructors that accept different parameters such as dimensions, colors, or starting coordinates.
+It allows you to create objects in different ways, providing more flexibility to clients of your class. 
+8. What is Default constructor overloading?
+Default constructor overloading is a class that can contain more than one constructor and all these constructors have the same name, but they differ only in the type of argument.
+
+9. What is default constructor? Explain with an example.
+It is a special type of constructor that is automatically created by the compiler if no other constructors are defined for a class.  It is a constructor without any parameters and it initializes the instance variables of the class to their default values.
+
