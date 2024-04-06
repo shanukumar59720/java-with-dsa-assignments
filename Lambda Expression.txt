@@ -1,0 +1,31 @@
+Lambda Expression
+Assignment Answers
+
+1. What is the lambda expression of Java 8?
+Lambda expression is a short block of code that takes in parameters and returns a value. It can be passed as an argument to a method or function. It is a function without having to define a separate method.
+Lambda expressions were introduced in Java 8, and they can be used to make code more concise and readable.
+
+2. Can you pass lambda expressions to a method? When?
+Yes, lambda expressions can be passed to a method that takes a function as an argument, such as the map() method.
+The map() method applies the function to each element of a list and returns a new list with the results.
+
+Example-
+List<Integer> numbers = Array.asList(1,2,3,4,5)
+List<Integer> doubledNumbers = numbers.map(x -> x*2 );
+System.out.println(doubledNumbers);
+
+Output-
+[2, 4, 6, 8, 10]
+
+3. What is the functional interface in Java 8?
+If any Java interface allows only one abstract method then it is called a “Functional Interface”.
+To make any interface as functional interface then we have to use @FunctionalInterface as annotation just above the interface.
+
+4. Why do we use lambda expressions in Java?
+We use lambda expressions in java mainly for two reasons – 
+* To provide the implementation of functional interface.
+* Less coding
+
+5. Is it mandatory for a lambda expression to have parameters?
+No it is not mandatory for a lambda expression to have parameters.
+Ex: () -> System.out.println(“No parameters”);
