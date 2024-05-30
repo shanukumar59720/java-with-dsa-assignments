@@ -1,0 +1,31 @@
+Multithreading in java
+Assignment solutions
+
+1. What do you mean by multithreading? Why is it important?
+Multithreading is a process using which we can execute several tasks simultaneously. It is important because it can save a good amount of time and also prevents multiple execution.
+
+2. What are the benefits of using multithreading ?
+It allows to write effective programs that utilize maximum CPU time.
+Improves performance as compared to traditional parallel programs that use multiple processes.
+Saves time and parallelism tasks.
+If an exception occurs in a single thread, it will not affect other threads as threads are independent.
+Less resource intensive than executing multiple processes at the same time.
+
+3. What is thread in java?
+A thread is a very light-weighted process, or we can say the smallest part of the process that allows a program to operate more efficiently by running multiple tasks simultaneously.
+
+4. What are the two ways of implementing thread in java?
+The two ways of implementing thread in java are –
+run()
+start()
+
+5. What’s the difference between thread and process?
+Thread is the smallest units of the particular process. It has the ability to execute different parts of the program at the same time. Whereas, process is in execution, which means an active program. A process can be handled using PCB (Process Control Block).
+
+6. How can we create daemon threads?
+We can create daemon threads using the thread class setDaemon(true). It is used to mark the current thread as daemon thread or user thread. isDaemon() method is generally used to check whether the current thread is daemon or not. If the thread is a daemon, it will return true, otherwise it returns false.
+
+7. What are the wait() and sleep() methods?
+Wait() is a non-static method that causes the current thread to wait and go to sleep until some other threads call the notify() or notifyAll() method for the object’s monitor. It simply releases the lock and is mostly used for inter-thread communication. It is defined in the object class, and should only be called from a synchronized context.
+
+Sleep() is a static method that pauses or stops the execution of the current thread for some specified period. It doesn’t release the lock while waiting and is mostly used to introduce pause on execution. It is defined in thread class, and no need to call from a synchronized context.
