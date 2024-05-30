@@ -1,0 +1,69 @@
+Strings in Java 4
+Assignment Answers
+
+1. What is mutable string in java? Explain with an example.
+Mutable strings are the strings that can be changed or modified in the same object. To make a string mutable, we can use StringBuilder or StringBuffer.
+
+2. Wap to reverse a string
+
+Input: “PWSKILLS”
+Output: “SLLIKWP”
+
+
+public class revString1 {
+    public static void main(String[] args) {
+        String str2 = new String();
+        String str = "PWSKILLS";
+        for(int i=str.length()-1; i>=0; i--){
+            str2 += str.charAt(i);
+        }
+        System.out.println("After reversing : " + str2);
+    }
+}
+
+
+3. Wap to reverse a sentence while preserving the position.
+Input: Think Twice
+Output: “knihk eciwt”
+
+
+public class revString1 {
+    public static void main(String[] args) {
+        String str2 = new String();
+        String str = "Think Twice";
+        for(int i=str.length()-1; i>=0; i--){
+            str2 += str.charAt(i);
+        }
+        System.out.println("After reversing : " + str2);
+    }
+}
+
+4. Wap to sort a string alphabetically.
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class SortString {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a string: ");
+        String input = scanner.nextLine();
+        scanner.close();
+
+        String sortedString = sortStringAlphabetically(input);
+
+        System.out.println("Sorted string: " + sortedString);
+    }
+
+    public static String sortStringAlphabetically(String str) {
+        // Convert the string to an array of characters
+        char[] charArray = str.toCharArray();
+
+        // Sort the array of characters
+        Arrays.sort(charArray);
+
+        // Convert the sorted array of characters back to a string
+        return new String(charArray);
+    }
+}
+
+
