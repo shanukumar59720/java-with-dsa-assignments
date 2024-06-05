@@ -1,0 +1,36 @@
+IO operation
+Assignment Solutions
+
+1. What is input and output stream in java?
+Input and output stream is used to process the input and produce the output. Java uses the concept of a stream to make I/O operation fast.
+
+2. What are the methods of OutputStream?
+write() – writes the specified byte to the output stream.
+write(byte[] array) – writes the bytes from the specified array to the output stream.
+flush() – forces to write all data present in the output stream to the destination.
+close() – closes the output stream.
+
+3. What is serialization in java?
+Serialization is the process of converting an object into a byte stream, allowing it to be easily saved to a file, transmitted over a network or stored in a database.
+
+4. What is the serializable interface in java?
+The serializable interface in java is a marker interface that has no methods. It is used to mark classes that can be serialized, meaning their object instances can be converted into a stream of bytes.
+
+5. What is deserialization in java?
+Deserialization is the process of converting a stream of bytes back into an object instance. This is done after an object has been serialized.
+
+6. How is deserialization achieved in java?
+Serialization is achieved in Java by implementing the Serializable interface. When an object is serialized, its state is converted into a stream of bytes, which can then be transferred over a network or stored in a file or
+Database.
+
+7. How can you avoid certain member variables of class from getting serialized?
+Deserialization is achieved in Java by reading a stream of bytes and using them to recreate the original object instance. This is done by calling the readObject() method of an ObjectInputStream instance.
+
+
+8. What classes are available in the Java IO File Classes API?
+Mark member variables as static or transient, and those member variables will no more be a part of Serialization.
+
+9. What is the difference between Externalizable and Serialization interface?
+Serializable: it is a marker interface and doesn’t have any methods. It provides its own default serialization process, we just need to implement a serializable interface. It provides less control.
+
+Externalizable: it’s not a marker interface. It has methods, we need to override writeExternal() and readExternal() for the serialization process to happen. It provides more control.
