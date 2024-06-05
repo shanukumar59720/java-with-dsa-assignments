@@ -1,0 +1,40 @@
+APIs and Annotation
+Assignment Solutions
+
+1. Program to display current date and time in java.
+import java.time.*;
+
+public class rough {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+        System.out.println(date);
+
+        LocalTime time = LocalTime.now();
+        System.out.println(time);
+    }
+}
+
+2. Write a program to convert a date a string in the format “MM/DD/YYYY”
+import java.time.*;
+
+public class rough {
+    public static void main(String[] args) {
+        LocalDate date = LocalDate.now();
+        int day = date.getDayOfMonth();
+        int month = date.getMonthValue();
+        int year = date.getYear();
+
+        System.out.println(month + "/" + day + "/" + year);
+    }
+}
+
+3. What is the difference between collections and streams? Explain with an example.
+Collections: Collection is a set of interfaces and classes which can be used to store, delete, retrieve, and manipulate the data or information which is in large number.
+
+Streams: streams are used to process a group of objects from the collection. Streams don’t change the original data structure, they only provide the result as per the pipelined methods. Once worked on a stream then it can’t do another work, which means one task to one stream.
+
+4. What is enums in java? Explain with an example.
+Enums are introduced in java 1.5 version and are special data type that represents a group of constants. These constants are named and can be used to represent a fixed set of values. Enums are often used in switch statements to check for corresponding values.
+
+5. What are in built annotations in java?
+Built in annotations are commonly used for various purposes, such as providing metadata to the compiler to the compiler or runtime environments. Example: @Override, @Deprecated, @SuppressWarnings, @Retention, @Target, @Inherited, @Documented
